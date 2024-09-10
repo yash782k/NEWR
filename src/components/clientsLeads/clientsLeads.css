@@ -1,0 +1,192 @@
+/* Container for the dashboard */
+.dashboard-container {
+  display: flex;
+}
+
+/* Sidebar styling */
+.sidebar-open .dashboard-content {
+  margin-left: 250px; /* Adjust based on your sidebar width */
+}
+
+/* Main content area */
+.dashboard-content {
+  flex: 1;
+  padding: 20px;
+  position: relative;
+}
+
+/* Header styling */
+.dashboard-content h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Toolbar container for search bar, action buttons, and create branch button */
+.toolbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Search bar container */
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #a39d9d;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 300px;
+}
+
+/* Search input */
+.search-bar-container input {
+  padding: 0 40px 0 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #666;
+  background-color: transparent;
+}
+
+/* Search dropdown */
+.search-dropdown {
+  padding: 10px;
+  width: 150px;
+  border: none;
+  outline: none;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #2d2c2c;
+  background-color: transparent;
+  cursor: pointer;
+  border-left: 1px solid #a39d9d;
+}
+
+/* Search icon */
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Action buttons */
+.action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.action-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px;
+  height: 35px;
+  background-color: #164dc3;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.action-button:hover {
+  background: linear-gradient(187.36deg, #0e3799 5.38%, #175cff 93.96%);
+}
+
+/* Create Lead button */
+.create-branch-container {
+  display: flex;
+  align-items: center;
+}
+
+.create-branch-container button {
+  height: 35px;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  width: 150px;
+}
+
+.create-branch-container button:hover {
+  background: linear-gradient(187.36deg, #0e3799 5.38%, #175cff 93.96%);
+}
+
+/* Table container */
+.table-container {
+  margin-top: 20px;
+  width: 100%;
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+
+/* Table styling */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  box-sizing: border-box;
+}
+
+/* Table headers */
+.table th {
+  padding: 15px;
+  background: #efefef;
+  font-weight: 600;
+  color: #000;
+  text-align: left;
+}
+
+/* Table cells */
+.table td {
+  padding: 15px;
+  border-bottom: 1px solid #efefef;
+  font-family: 'Public Sans', sans-serif;
+  font-size: 14px;
+  color: #000;
+}
+
+/* Status colors */
+.table td.status-active {
+  color: #008101;
+}
+
+.table td.status-deactive {
+  color: #ff0000;
+}
+
+/* Action icons */
+.action-icon {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Filter buttons */
+.filter-buttons-container {
+  margin: 20px 0;
+}
+
+.filter-buttons-container span {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.active-filter {
+  font-weight: bold;
+}

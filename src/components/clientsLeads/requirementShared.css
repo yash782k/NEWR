@@ -1,0 +1,25 @@
+.dashboard-container {
+    display: flex;
+  }
+  
+  .dashboard-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .leads-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .leads-table th, .leads-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .leads-table th {
+    background-color: #f4f4f4;
+  }
+  
